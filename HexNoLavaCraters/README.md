@@ -1,4 +1,4 @@
-﻿# HexNoLavaCraters
+# HexNoLavaCraters
 
 Prevents Lava Blob explosions from creating terrain craters in the Ashlands.
 
