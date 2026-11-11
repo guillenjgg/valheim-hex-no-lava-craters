@@ -1,6 +1,7 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
+using System.Reflection;
 
 namespace HexNoLavaCraters
 {
@@ -9,7 +10,7 @@ namespace HexNoLavaCraters
     {
         private const string PluginGuid = "com.hex.nolavacraters";
         private const string PluginName = "HexNoLavaCraters";
-        private const string PluginVersion = "1.0.0";
+        private const string PluginVersion = "1.0.1";
 
         private Harmony _harmonyInstance;
 
@@ -22,7 +23,7 @@ namespace HexNoLavaCraters
             Log = Logger;
 
             _harmonyInstance = new Harmony(PluginGuid);
-            _harmonyInstance.PatchAll();
+            _harmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
 
             Log.LogInfo($"{PluginName} v{PluginVersion} loaded.");
         }

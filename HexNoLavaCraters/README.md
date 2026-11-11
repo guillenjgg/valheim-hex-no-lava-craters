@@ -2,13 +2,6 @@
 
 Prevents Lava Blob explosions from creating terrain craters in the Ashlands.
 
-## Features
-
-- Prevents Lava Blob explosions from creating terrain craters
-- No configuration required
-
----
-
 ## Installation
 
 ### Thunderstore
@@ -26,16 +19,18 @@ BepInEx/plugins/
 
 3. Launch the game.
 
----
-
 ## Multiplayer
 
-Has not been tested. Use at your own risk.
-
----
+Has not been tested.
 
 ## Compatibility
 
 HexNoLavaCraters only modifies the Lava Blob terrain deformation prefab.
 
 Mods that directly modify the same prefab may be incompatible.
+
+## Support and Feedback
+https://discord.gg/wU2FXD94v4
+
+## Source Code
+https://github.com/guillenjgg/valheim-hex-no-lava-craters
